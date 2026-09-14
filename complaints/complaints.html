@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spravka</title>
+    <link rel="stylesheet" href="/templates.css">
+    <link rel="stylesheet" href="/complaints/complaints.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="hot-bar-container">
+        <a href="/index.html">Главная</a>
+        <a href="/complaints/complaints.html">Жалобы</a>
+        <a href="/explanations/explanations.html">Как Играть</a>
+    </div>
+
+    <lottie-player 
+        src="/animations/document.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 300px; height: 300px; margin-top: 100px;"
+        autoplay
+        class="smooth">
+    </lottie-player>
+
+    <div id="complaintsList"></div>
+
+    <form id="complaintForm">
+        <input type="text" id="nickInput" placeholder="Ник нарушителя" required>
+        <input type="text" id="msgInput" placeholder="Что сделал" required>
+        <button type="submit">Отправить жалобу</button>
+    </form>
+
+    <script src="/complaints/complaints.js"></script>
+    <script src="/scroll.js" target="_blank"></script>
+</body>
+</html>

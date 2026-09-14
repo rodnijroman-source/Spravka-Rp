@@ -1,0 +1,28 @@
+.global-container {
+    margin-top: 100px;
+}
+
+#complaintForm {
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(42, 42, 42);
+    padding: 10px;
+
+    border: 2px solid #676666;
+
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.complaint-container {
+    background-color: rgb(35, 36, 36);
+    padding: 20px;
+    border: 2px solid #f00d0d;
+    border-radius: 6px;
+
+    margin: 30px;
+
+    animation: fadeIn 0.3s ease-in forwards;
+}

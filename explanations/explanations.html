@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spravka</title>
+    <link rel="stylesheet" href="/templates.css">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="hot-bar-container">
+        <a href="/index.html">Главная</a>
+        <a href="/complaints/complaints.html">Жалобы</a>
+        <a href="/explanations/explanations.html">Как Играть</a>
+    </div>
+
+    <div class="global-container">
+        <lottie-player
+            src="/animations/game.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px; margin-top: 100px;"
+            autoplay
+            class="smooth">
+        </lottie-player>
+
+        <div class="span-container smooth">
+            <h1 class="smooth">1. Для начала надо установить игру если ее нету</h1>
+            <button id="download-game-btn" class="smooth">Перейти На Официальный Сайт</button>
+        </div>
+
+        <div class="span-container smooth">
+            <h1 class="smooth">2. В телеграм канале вы можете увидеть когда запуск рп</h1>
+            <button id="telegram-btn" class="smooth">Перейти В Телеграм Канал</button>
+        </div>
+    </div>
+
+    <script src="/scroll.js"></script>
+    <script src="/explanations/explanations.js"></script>
+</body>
+</html>
