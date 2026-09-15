@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
         }
     });
 
-    if (currentScrollY > scrollingY) {
+    if (currentScrollY > scrollingY && currentScrollY > 100) {
         hotBar.classList.add('hidden');
     }
     else if (currentScrollY < scrollingY) {
