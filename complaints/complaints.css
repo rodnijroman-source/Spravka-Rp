@@ -2,6 +2,11 @@
     margin-top: 100px;
 }
 
+body {
+    background: none;
+    background-color: #0f1010;
+}
+
 #complaintForm {
     display: flex;
     align-items: center;
@@ -19,7 +24,7 @@
 .complaint-container {
     background-color: rgb(35, 36, 36);
     padding: 20px;
-    border: 2px solid #f00d0d;
+    border: 2px solid #467886;
     border-radius: 6px;
 
     margin: 30px;

@@ -11,7 +11,15 @@ html {
 }
 
 body {
-    background-color: rgb(19, 20, 21);
+    background: 
+        repeating-linear-gradient(
+            -45deg,
+            rgba(8, 8, 8, 0.1),
+            rgba(28, 28, 28, 0.094) 15px,
+            rgba(23, 23, 23, 0.11) 15px,
+            rgba(2, 2, 2, 0.308) 30px
+        ),
+        linear-gradient(135deg, #181818 0%, #242829 100%);
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
@@ -68,7 +76,7 @@ a:hover {
     
     padding: 20px;
     box-sizing: border-box;
-    border-bottom: 2px solid #646464;
+    border-bottom: 2px solid #467886;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 
@@ -82,9 +90,8 @@ a:hover {
 .span-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: start;
     padding: 50px;
-    background-color: rgba(33, 33, 33, 0.418);
 
     border: 2px solid #404040;
     border-radius: 12px;
@@ -92,26 +99,48 @@ a:hover {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
     transition: all 0.3s ease-in-out;
+
+    background: 
+        repeating-linear-gradient(
+            -45deg,
+            rgba(16, 16, 16, 0.075),
+            rgba(28, 28, 28, 0.2) 15px,
+            rgba(23, 23, 23, 0.103) 15px,
+            rgba(2, 2, 2, 0.068) 30px
+        ),
+        linear-gradient(135deg, #181818 0%, #242829 100%);
 }
-
 .span-container:hover {
-    border-color: rgb(255, 0, 76);
-
+    border-color: #467886;
     transform: translateY(-10px);
 }
 
 .global-container {
     display: flex;
     flex-direction: column;
+
     align-items: center;
+    text-align: center;
+
     padding: 20px;
-    background-color: rgba(33, 33, 33, 0.155);
+    background-color: rgb(17, 17, 17);
 
     border: 2px solid rgb(251, 255, 0);
     border-radius: 12px;
 
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    gap: 50px;
+    gap: 30px;
+
+    margin: 80px auto;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+.global-container > * {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input {
