@@ -27,7 +27,15 @@ body {
     border: 2px solid #467886;
     border-radius: 6px;
 
-    margin: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    box-sizing: border-box;
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    margin-bottom: 120px;
 
     animation: fadeIn 0.3s ease-in forwards;
 }
